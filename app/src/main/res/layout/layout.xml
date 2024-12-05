@@ -36,29 +36,36 @@
         android:text="Today's Task" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/taskRV"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
         android:orientation="vertical"
         android:paddingBottom="100dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem=""
+        tools:listitem="@layout/view_task_layout"
         />
 
 </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/addTaskFABtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
         android:backgroundTint="@color/black"
-        android:text="@string/add_text"
+        android:text="Add"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:icon="@drawable/ic_add_circle"
-        app:iconSize="25dp"
-        app:iconTint="@color/white" />
+        app:iconTint="@color/white"
+        app:iconSize="18dp"
+        app:iconGravity="start"
+        />
+
+
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoteApp"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/view_task_layout" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -55,7 +55,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
         android:backgroundTint="@color/black"
-        android:text="Add"
+        android:text="Add Task"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
